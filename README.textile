@@ -7,7 +7,7 @@ Library provides:
 
 h2. Installation
 
-Either include the source code in your project our link the SWC.
+Either include the source code in your project or link the SWC.
 
 h2. Working with audio files
 
