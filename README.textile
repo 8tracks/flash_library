@@ -5,9 +5,13 @@ Library provides:
 * code to handle both MP3 and AAC audio files
 * code to work with the 8tracks API (in progress)
 
+h2. Installation
+
+Either include the source code in your project our link the SWC.
+
 h2. Working with audio files
 
-The library provides code to play both MP3 files and AAC files using a common interface.
+The library provides code to play both MP3 and AAC files using a common interface.
 
 A factory is used to load audio files:
 
@@ -19,7 +23,7 @@ import com.eight_tracks.media.AudioFileFactory;
 var factory:AudioFileFactory = new AudioFileFactory();
 </pre>
 
-It can then be used to create a handle to an audio file:
+Which can then be used to create a handle to an audio file:
 
 <pre>
 import com.eight_tracks.media.IAudioFile;
@@ -29,7 +33,7 @@ import com.eight_tracks.media.IAudioFile;
 var audioFile:IAudioFile = factory.create('path/to/audio/file');
 </pre>
 
-Then you can used the interface to control playback:
+Which in turn can be used to control playback:
 
 <pre>
 audioFile.volume = .5;
